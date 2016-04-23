@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://tympanus.net/Development/ButtonComponentMorph/index.html -->
+<html lang="en" class=" js csstransitions gr__tympanus_net"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Morphing Buttons Concept | Demo 1</title>
+		<meta name="description" content="Morphing Buttons Concept: Inspiration for revealing content by morphing the action element">
+		<meta name="keywords" content="expanding button, morph, modal, fullscreen, transition, ui">
+		<link rel="shortcut icon" href="http://tympanus.net/Development/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/demo.css">
+		<link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/component.css">
+		<link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/content.css">
+		<script type="text/javascript" async="" src="./Morphing Buttons Concept _ Demo 1_files/ga.js"></script><script src="./Morphing Buttons Concept _ Demo 1_files/modernizr.custom.js"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</head>
+	<body data-gr-c-s-loaded="true">
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="http://tympanus.net/Development/PageLoadingEffects/"><span>Previous Demo</span></a>
+				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=19004"><span>Back to the Codrops Article</span></a></span>
+			</div>
+			<header class="codrops-header">
+				<h1>Morphing Buttons Concept</h1>
+				<p>Inspiration for revealing content by morphing the action element. Examples:</p>
+				<nav class="codrops-demos">
+					<a class="current-demo" href="http://tympanus.net/Development/ButtonComponentMorph/index.html">Login/Signup</a>
+					<a href="http://tympanus.net/Development/ButtonComponentMorph/index2.html">Terms</a>
+					<a href="http://tympanus.net/Development/ButtonComponentMorph/index3.html">Info Overlay</a>
+					<a href="http://tympanus.net/Development/ButtonComponentMorph/index4.html">Subscribe</a>
+					<a href="http://tympanus.net/Development/ButtonComponentMorph/index5.html">Share</a>
+					<a href="http://tympanus.net/Development/ButtonComponentMorph/index6.html">Video Player</a>
+					<a href="http://tympanus.net/Development/ButtonComponentMorph/index7.html">Sidebar Settings</a>
+				</nav>
+			</header>
+			<section>
+				<p>Click one of the buttons below to see a <strong>modal dialog</strong>:</p>
+				<div class="mockup-content">
+					<p>Pea horseradish azuki bean lettuce avocado asparagus okra.</p>
+					<div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
+						<button type="button">Login</button>
+						<div class="morph-content" style="left: 98.8889px; top: 628.42px;">
+							<div>
+								<div class="content-style-form content-style-form-1">
+									<span class="icon icon-close">Close the dialog</span>
+									<h2>Login</h2>
+									<form>
+										<p><label>Email</label><input type="text"></p>
+										<p><label>Password</label><input type="password"></p>
+										<p><button>Login</button></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div><!-- morph-button -->
+					<strong class="joiner">or</strong>
+					<div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
+						<button type="button">Signup</button>
+						<div class="morph-content" style="left: 60px; top: 1038.23px;">
+							<div>
+								<div class="content-style-form content-style-form-2">
+									<span class="icon icon-close">Close the dialog</span>
+									<h2>Sign Up</h2>
+									<form>
+										<p><label>Email</label><input type="text"></p>
+										<p><label>Password</label><input type="password"></p>
+										<p><label>Repeat Password</label><input type="password"></p>
+										<p><button>Sign Up</button></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div><!-- morph-button -->
+					<p>Kohlrabi radish okra azuki bean corn fava bean mustard tigernut juccama green bean celtuce collard greens avocado quandong.</p>
+				</div><!-- /form-mockup -->
+			</section>
+			<section class="related">
+				<p>If you enjoyed this demo you might also like:</p>
+				<a href="http://tympanus.net/Development/ProgressButtonStyles/">
+					<img src="./Morphing Buttons Concept _ Demo 1_files/ProgressButtonStyles-300x162.png">
+					<h3>Progress Button Styles</h3>
+				</a>
+				<a href="http://tympanus.net/Development/SidebarTransitions/">
+					<img src="./Morphing Buttons Concept _ Demo 1_files/sidebartransitions-300x162.png">
+					<h3>Sidebar Transitions</h3>
+				</a>
+			</section>
+		</div><!-- /container -->
+		<script src="./Morphing Buttons Concept _ Demo 1_files/classie.js"></script>
+		<script src="./Morphing Buttons Concept _ Demo 1_files/uiMorphingButton_fixed.js"></script>
+		<script>
+			(function() {
+				var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+				// trick to prevent scrolling when opening/closing button
+				function noScrollFn() {
+					window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+				}
+
+				function noScroll() {
+					window.removeEventListener( 'scroll', scrollHandler );
+					window.addEventListener( 'scroll', noScrollFn );
+				}
+
+				function scrollFn() {
+					window.addEventListener( 'scroll', scrollHandler );
+				}
+
+				function canScroll() {
+					window.removeEventListener( 'scroll', noScrollFn );
+					scrollFn();
+				}
+
+				function scrollHandler() {
+					if( !didScroll ) {
+						didScroll = true;
+						setTimeout( function() { scrollPage(); }, 60 );
+					}
+				};
+
+				function scrollPage() {
+					scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+					didScroll = false;
+				};
+
+				scrollFn();
+
+				[].slice.call( document.querySelectorAll( '.morph-button' ) ).forEach( function( bttn ) {
+					new UIMorphingButton( bttn, {
+						closeEl : '.icon-close',
+						onBeforeOpen : function() {
+							// don't allow to scroll
+							noScroll();
+						},
+						onAfterOpen : function() {
+							// can scroll again
+							canScroll();
+						},
+						onBeforeClose : function() {
+							// don't allow to scroll
+							noScroll();
+						},
+						onAfterClose : function() {
+							// can scroll again
+							canScroll();
+						}
+					} );
+				} );
+
+				// for demo purposes only
+				[].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+					bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
+				} );
+			})();
+		</script>
+		<!-- For the demo ad only -->   
+<script src="http://tympanus.net/codrops/adpacks/demoad.js"></script>
+
+	
+<div id="sbi_camera_button" style="width: 29px !important; height: 27px !important; top: 1621.07px !important; left: 368.889px !important; display: none !important;"></div></body><div></div><div></div></html>
